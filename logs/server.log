@@ -1,0 +1,8 @@
+2026-08-15 10:01:12 INFO Server started successfully
+2026-08-15 10:02:45 INFO User authentication successful
+2026-08-15 10:04:18 WARNING Multiple failed login attempts from 192.168.1.25
+2026-08-15 10:04:21 WARNING Multiple failed login attempts from 192.168.1.25
+2026-08-15 10:04:25 ERROR Authentication service detected suspicious activity
+2026-08-15 10:05:02 INFO Database connection established
+2026-08-15 10:06:33 ERROR nginx failed to bind port 80
+2026-08-15 10:06:34 ERROR Web service startup failed
