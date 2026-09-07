@@ -1570,8 +1570,14 @@ def render_live_dashboard():
 
         for message in st.session_state.messages:
 
+            if message["role"] == "user":
+                avatar = "👩‍💻"
+            else:
+                avatar = "🤖"
+
             with st.chat_message(
-                message["role"]
+                message["role"],
+                avatar=avatar
             ):
 
                 st.markdown(
@@ -1594,12 +1600,12 @@ def render_live_dashboard():
             )
 
 
-            with st.chat_message("user"):
+            with st.chat_message("user", avatar="👩‍💻"):
 
                 st.markdown(prompt)
 
 
-            with st.chat_message("assistant"):
+            with st.chat_message("assistant", avatar="🤖"):
 
                 with st.spinner(
                     "🧠 AegisOps AI is thinking..."
